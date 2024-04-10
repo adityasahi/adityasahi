@@ -1,4 +1,8 @@
-### Hi there 👋
+Heya👋
+
+A bit about me
+I like skiing, hiking, animals, and coding.  🖥️
+
 
 <!--
 **adityasahi/adityasahi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
