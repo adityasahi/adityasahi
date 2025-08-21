@@ -1,6 +1,6 @@
 # Hi there, I'm Aditya Sahi! 👋
 
-🎓 **Recently graduated with a Masters**  
+🎓 **Recently graduated with a Masters in Electrical Engineering**  
 💻 **Tech Enthusiast | Builder | Innovator**
 
 ---
