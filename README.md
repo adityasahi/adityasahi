@@ -26,7 +26,7 @@ I'm passionate about building robust applications and pushing the boundaries of 
 ---
 
 ## 📫 Let's Connect!
-- 🌐 [Portfolio](https://adityasahi.netlify.app)
+- 🌐 [Portfolio](https://www.adityasahi.com)
 - [LinkedIn](https://www.linkedin.com/in/adityasahi07)
 
 ---
