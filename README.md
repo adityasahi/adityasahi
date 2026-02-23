@@ -47,11 +47,6 @@
 
 </div>
 
----
-
-## 🐍 Contribution Snake
-
-![snake animation](https://github.com/adityasahi/blob/output/github-contribution-grid-snake2.svg)
 
 ---
 
