@@ -16,11 +16,11 @@
 
 ## 🚀 About Me
 
-- 🔭 Currently working on AI + real-time data apps
+- 🔭 Currently working on AI + real-time data apps & startups
 - 🌱 Exploring advanced ML and embedded systems
-- 💬 Ask me about Python, RTOS, C++, or AI/ML
+- 💬 Ask me about Python, RTOS, C++, or AI/ML or coffee
 - 📫 Reach me at [adityasahi.com](https://www.adityasahi.com)
-- ⚡ Fun fact: There's always something exciting on my desk!
+- ⚡ Fun fact: There's always something going on in my building process
 
 ---
 
@@ -36,6 +36,14 @@
 ![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![Linux](https://img.shields.io/badge/-Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![VS Code](https://img.shields.io/badge/-VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/-CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![RAG](https://img.shields.io/badge/-RAG-FF6B6B?style=for-the-badge&logo=openai&logoColor=white)
+![Artificial Intelligence](https://img.shields.io/badge/-Artificial%20Intelligence-412991?style=for-the-badge&logo=langchain&logoColor=white)
+![Machine Learning](https://img.shields.io/badge/-Machine%20Learning-FF6F00?style=for-the-badge&logo=scikitlearn&logoColor=white)
+
 
 ---
 
@@ -46,13 +54,11 @@
 [![GitHub Streak](https://streak-stats.demolab.com/?user=adityasahi&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
 
 </div>
---
+---
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="github-snake.svg" />
-  <img alt="github-snake" src="github-snake.svg" />
-</picture>
+---
+## GitHub Stats
+[![Aditya's GitHub stats](https://github-readme-stats.vercel.app/api?username=adityasahi&show_icons=true&theme=radical)
 ---
 
 ## 📈 Activity Graph
