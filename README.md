@@ -56,11 +56,6 @@
 </div>
 ---
 
----
-## GitHub Stats
-[![Aditya's GitHub stats](https://github-readme-stats.vercel.app/api?username=adityasahi&show_icons=true&theme=radical)
----
-
 ## 📈 Activity Graph
 
 [![Aditya's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=adityasahi&theme=tokyo-night&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
