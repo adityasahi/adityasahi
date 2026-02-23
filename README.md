@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Visitor Counter -->
-![Visitor Count](https://profile-counter.glitch.me/YOUR_GITHUB_USERNAME/count.svg)
+![Visitor Count](https://profile-counter.glitch.me/adityasahi/count.svg)
 
 <!-- Animated Typing Header -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=00F7FF&center=true&vCenter=true&width=600&lines=Hi+there%2C+I'm+Aditya+Sahi!+👋;Masters+in+Electrical+Engineering;AI+%7C+RTOS+%7C+App+Builder;Always+building+something+new...)](https://git.io/typing-svg)
