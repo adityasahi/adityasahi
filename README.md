@@ -9,7 +9,7 @@
 
 ---
 
-🎓 **Recently graduated with a Masters in Electrical Engineering**
+🎓 **Masters in Electrical Engineering**
 💻 **Tech Enthusiast | Builder | Innovator**
 
 ---
