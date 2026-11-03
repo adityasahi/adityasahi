@@ -57,7 +57,7 @@
 ### 🧾 Latest Commits
 
 <!--RECENT_ACTIVITY:start-->
-_Loading… the first workflow run will fill this in._
+_No recent public commits._
 <!--RECENT_ACTIVITY:end-->
 
 ---
