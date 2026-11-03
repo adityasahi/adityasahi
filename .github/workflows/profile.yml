@@ -1,0 +1,84 @@
+name: Update profile
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+  repository_dispatch:
+    types: [commit-pushed]
+  push:
+    branches: [main]
+    paths-ignore: ["README.md"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-update
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update latest commits in README
+        env:
+          GH_USER: ${{ github.repository_owner }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, urllib.request
+          user = os.environ["GH_USER"]
+          req = urllib.request.Request(
+              f"https://api.github.com/users/{user}/events/public?per_page=100",
+              headers={"Authorization": f"Bearer {os.environ['GH_TOKEN']}",
+                       "Accept": "application/vnd.github+json"})
+          events = json.load(urllib.request.urlopen(req))
+          lines = []
+          for e in events:
+              if e["type"] != "PushEvent":
+                  continue
+              repo = e["repo"]["name"]
+              for c in reversed(e["payload"].get("commits", [])):
+                  msg = c["message"].splitlines()[0][:70].replace("|", "/")
+                  lines.append(f"| [`{c['sha'][:7]}`](https://github.com/{repo}/commit/{c['sha']}) | [{repo}](https://github.com/{repo}) | {msg} | {e['created_at'][:10]} |")
+                  if len(lines) >= 8:
+                      break
+              if len(lines) >= 8:
+                  break
+          if lines:
+              block = "| Commit | Repo | Message | Date |\n|---|---|---|---|\n" + "\n".join(lines)
+          else:
+              block = "_No recent public commits._"
+          s, t = "<!--RECENT_ACTIVITY:start-->", "<!--RECENT_ACTIVITY:end-->"
+          txt = open("README.md", encoding="utf-8").read()
+          new = re.sub(re.escape(s) + r".*?" + re.escape(t), s + "\n" + block + "\n" + t, txt, flags=re.S)
+          open("README.md", "w", encoding="utf-8").write(new)
+          PY
+
+      - name: Commit README changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "chore: update latest commits"
+          git push
+
+      - name: Generate snake
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake.svg
+            dist/snake-dark.svg?palette=github-dark
+
+      - name: Publish snake
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+          commit_message: "chore: update snake"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
